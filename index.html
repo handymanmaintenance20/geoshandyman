@@ -271,15 +271,20 @@
     <iframe name="hidden_iframe" style="display:none;"></iframe>
 
     <form id="contactForm"
-      <form action="https://formspree.io/f/yourFormID"
+      action="https://api.web3forms.com/submit"
       method="POST"
       target="hidden_iframe"
       style="background:#f7f4ef;padding:30px;border-radius:10px;box-shadow:0 4px 10px rgba(0,0,0,0.08);">
 
-      <input type="hidden" name="_subject" value="New Customer Message from Geo's Handyman">
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_template" value="table">
-      <input type="hidden" name="_autoresponse" value="Thank you for contacting Geo's Handyman. We received your message and will get back to you soon.">
+      <input type="hidden" name="access_key" value="12b39c4d-e0f1-4caa-bd6a-1e2a82cfad71">
+      <input type="hidden" name="subject" value="New Customer Message from Geo's Handyman">
+      <input type="hidden" name="from_name" value="Geo's Handyman Website">
+      <input type="checkbox" name="botcheck" style="display:none;">
+
+      
+      
+      
+      
 
       <label style="display:block;font-weight:bold;margin-bottom:6px;">Name</label>
       <input type="text" name="Name" placeholder="Your Name" required
@@ -333,6 +338,5 @@
     });
   }
 </script>
-
 </body>
 </html>
